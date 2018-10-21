@@ -1,0 +1,23 @@
+pipeline {
+    agent any 
+    stages {
+        stage('Build') { 
+            steps {
+                sh 'javac Javaloop.java'
+                sh 'javac Javaloop.java'
+            }
+        }
+        stage('Test') { 
+            steps {
+                sh 'javac Javaloop2.java'
+                sh 'javac Javaloop2.java' 
+            }
+        }
+        stage('Deploy') { 
+            steps {
+                sh 'javac Javaloop3.java'
+                sh 'javac Javaloop3.java'
+            }
+        }
+    }
+}
